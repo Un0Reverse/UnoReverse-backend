@@ -73,14 +73,9 @@ def _register_error_handlers(app):
 
 def _register_modules(app):
     """Inregistreaza rutele fiecarui modul (M1 -> M8)."""
-    from backend import auth, rooms, equipment, booking, approval, notifications, reports
+    from backend import auth
     auth.register_routes(app)
-    rooms.register_routes(app)
-    equipment.register_routes(app)
-    booking.register_routes(app)
-    approval.register_routes(app)
-    notifications.register_routes(app)
-    reports.register_routes(app)
+
 
 
 if __name__ == "__main__":
